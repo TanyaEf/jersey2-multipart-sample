@@ -1,0 +1,4180 @@
+{
+  "version" : 0,
+  "permissionMask" : 1,
+  "creationDate" : "2016-08-15T13:36:52",
+  "updateDate" : "2016-06-10T23:11:55",
+  "label" : "Supermart Domain",
+  "description" : "Comprehensive example of Domain (pre-joined table sets for complex reporting, custom query based dataset, column and row security, I18n bundles)",
+  "uri" : "/public/Samples/Domains/supermartDomain",
+  "dataSource" : {
+    "dataSourceReference" : {
+      "uri" : "/public/Samples/Data_Sources/FoodmartDataSourceJNDI"
+    }
+  },
+  "securityFile" : {
+    "securityFile" : {
+      "label" : "supermartDomain_domain_security",
+      "description" : "supermartDomain_domain_security",
+      "type" : "accessGrantSchema"
+    }
+  },
+  "schema" : {
+    "resources" : [ {
+      "group" : {
+        "name" : "dsFoodMart",
+        "elements" : [ {
+          "group" : {
+            "name" : "public",
+            "elements" : [ {
+              "group" : {
+                "name" : "account3",
+                "sourceName" : "account",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "account_description",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "account_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "account_parent",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "account_rollup",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "account_type",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "custom_members",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "category3",
+                "sourceName" : "category",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "category_description",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "category_id",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "category_parent",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "category_rollup",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "customer1",
+                "sourceName" : "customer",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "account_num",
+                    "type" : "java.lang.Long"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "address1",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "address2",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "address3",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "address4",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "birthdate",
+                    "type" : "java.util.Date"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "customer_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "customer_region_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "date_accnt_opened",
+                    "type" : "java.util.Date"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "education",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "fname",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "fullname",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "gender",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "houseowner",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "lname",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "marital_status",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "member_card",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "mi",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "num_cars_owned",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "num_children_at_home",
+                    "type" : "java.lang.Short"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "occupation",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "phone1",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "phone2",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "postal_code",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "state_province",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "total_children",
+                    "type" : "java.lang.Short"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "yearly_income",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "department4",
+                "sourceName" : "department",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "department_description",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "department_id",
+                    "type" : "java.lang.Integer"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "employee4",
+                "sourceName" : "employee",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "birth_date",
+                    "type" : "java.util.Date"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "department_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "education_level",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "employee_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "end_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "first_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "full_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "gender",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "hire_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "last_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "management_role",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "marital_status",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "position_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "position_title",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "salary",
+                    "type" : "java.math.BigDecimal"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "supervisor_id",
+                    "type" : "java.lang.Integer"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "expense_fact3",
+                "sourceName" : "expense_fact",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "account_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "amount",
+                    "type" : "java.math.BigDecimal"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "category_id",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "currency_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "exp_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "time_id",
+                    "type" : "java.lang.Integer"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "position4",
+                "sourceName" : "position",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "management_role",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "max_scale",
+                    "type" : "java.math.BigDecimal"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "min_scale",
+                    "type" : "java.math.BigDecimal"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "pay_type",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "position_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "position_title",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "product1",
+                "sourceName" : "product",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "brand_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "cases_per_pallet",
+                    "type" : "java.lang.Short"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "gross_weight",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "low_fat",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "net_weight",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_class_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "recyclable_package",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "shelf_depth",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "shelf_height",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "shelf_width",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sku",
+                    "type" : "java.lang.Long"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "srp",
+                    "type" : "java.math.BigDecimal"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "units_per_case",
+                    "type" : "java.lang.Short"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "product2",
+                "sourceName" : "product",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "brand_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "cases_per_pallet",
+                    "type" : "java.lang.Short"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "gross_weight",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "low_fat",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "net_weight",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_class_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "recyclable_package",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "shelf_depth",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "shelf_height",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "shelf_width",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sku",
+                    "type" : "java.lang.Long"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "srp",
+                    "type" : "java.math.BigDecimal"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "units_per_case",
+                    "type" : "java.lang.Short"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "product_class1",
+                "sourceName" : "product_class",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "product_category",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_class_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_department",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_family",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_subcategory",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "product_class2",
+                "sourceName" : "product_class",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "product_category",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_class_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_department",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_family",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_subcategory",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "region11",
+                "sourceName" : "region",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "region_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_district",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_district_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_region",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_state_province",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "region12",
+                "sourceName" : "region",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "region_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_district",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_district_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_region",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_state_province",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "region2",
+                "sourceName" : "region",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "region_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_district",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_district_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_region",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_state_province",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "region3",
+                "sourceName" : "region",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "region_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_district",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_district_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_region",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_state_province",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "region4",
+                "sourceName" : "region",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "region_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_district",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_district_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_region",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "sales_state_province",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "salary4",
+                "sourceName" : "salary",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "currency_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "department_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "employee_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "overtime_paid",
+                    "type" : "java.math.BigDecimal"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "pay_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "salary_paid",
+                    "type" : "java.math.BigDecimal"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "vacation_accrued",
+                    "type" : "java.lang.Double"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "vacation_used",
+                    "type" : "java.lang.Double"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "sales_fact_1998_1",
+                "sourceName" : "sales_fact_1998",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "customer_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "product_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "promotion_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_cost",
+                    "type" : "java.math.BigDecimal"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_sales",
+                    "type" : "java.math.BigDecimal"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "time_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "unit_sales",
+                    "type" : "java.math.BigDecimal"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "store1",
+                "sourceName" : "store",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "coffee_bar",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "first_opened_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "florist",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "frozen_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "grocery_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "last_remodel_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "meat_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "prepared_food",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "region_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "salad_bar",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_fax",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_manager",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_number",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_phone",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_postal_code",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_state",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_street_address",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_type",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "video_store",
+                    "type" : "java.lang.Boolean"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "store2",
+                "sourceName" : "store",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "coffee_bar",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "first_opened_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "florist",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "frozen_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "grocery_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "last_remodel_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "meat_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "prepared_food",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "region_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "salad_bar",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_fax",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_manager",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_number",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_phone",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_postal_code",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_state",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_street_address",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_type",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "video_store",
+                    "type" : "java.lang.Boolean"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "store3",
+                "sourceName" : "store",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "coffee_bar",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "first_opened_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "florist",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "frozen_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "grocery_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "last_remodel_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "meat_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "prepared_food",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "region_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "salad_bar",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_fax",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_manager",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_number",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_phone",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_postal_code",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_state",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_street_address",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_type",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "video_store",
+                    "type" : "java.lang.Boolean"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "store4",
+                "sourceName" : "store",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "coffee_bar",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "first_opened_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "florist",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "frozen_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "grocery_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "last_remodel_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "meat_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "prepared_food",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "region_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "salad_bar",
+                    "type" : "java.lang.Boolean"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_fax",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_manager",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_number",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_phone",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_postal_code",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_sqft",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_state",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_street_address",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "store_type",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "video_store",
+                    "type" : "java.lang.Boolean"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "time_by_day1",
+                "sourceName" : "time_by_day",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "day_of_month",
+                    "type" : "java.lang.Short"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "day_of_week",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "fiscal_period",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "month_of_year",
+                    "type" : "java.lang.Short"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "quarter",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "the_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "the_day",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "the_month",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "the_year",
+                    "type" : "java.lang.Short"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "time_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "week_of_year",
+                    "type" : "java.lang.Integer"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "time_by_day2",
+                "sourceName" : "time_by_day",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "day_of_month",
+                    "type" : "java.lang.Short"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "day_of_week",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "fiscal_period",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "month_of_year",
+                    "type" : "java.lang.Short"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "quarter",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "the_date",
+                    "type" : "java.sql.Timestamp"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "the_day",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "the_month",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "the_year",
+                    "type" : "java.lang.Short"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "time_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "week_of_year",
+                    "type" : "java.lang.Integer"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "warehouse2",
+                "sourceName" : "warehouse",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "stores_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "wa_address1",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "wa_address2",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "wa_address3",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "wa_address4",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_city",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_class_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_country",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_fax",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_id",
+                    "type" : "java.lang.Integer"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_owner_name",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_phone",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_postal_code",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_state_province",
+                    "type" : "java.lang.String"
+                  }
+                } ]
+              }
+            }, {
+              "group" : {
+                "name" : "warehouse_class2",
+                "sourceName" : "warehouse_class",
+                "elements" : [ {
+                  "element" : {
+                    "name" : "description",
+                    "type" : "java.lang.String"
+                  }
+                }, {
+                  "element" : {
+                    "name" : "warehouse_class_id",
+                    "type" : "java.lang.Integer"
+                  }
+                } ]
+              }
+            } ]
+          }
+        }, {
+          "queryGroup" : {
+            "name" : "inventory_fact_1998_2",
+            "elements" : [ {
+              "element" : {
+                "name" : "product_id",
+                "type" : "java.lang.Integer"
+              }
+            }, {
+              "element" : {
+                "name" : "store_id",
+                "type" : "java.lang.Integer"
+              }
+            }, {
+              "element" : {
+                "name" : "store_invoice",
+                "type" : "java.math.BigDecimal"
+              }
+            }, {
+              "element" : {
+                "name" : "supply_time",
+                "type" : "java.lang.Short"
+              }
+            }, {
+              "element" : {
+                "name" : "time_id",
+                "type" : "java.lang.Integer"
+              }
+            }, {
+              "element" : {
+                "name" : "units_ordered",
+                "type" : "java.lang.Integer"
+              }
+            }, {
+              "element" : {
+                "name" : "units_shipped",
+                "type" : "java.lang.Integer"
+              }
+            }, {
+              "element" : {
+                "name" : "warehouse_cost",
+                "type" : "java.math.BigDecimal"
+              }
+            }, {
+              "element" : {
+                "name" : "warehouse_id",
+                "type" : "java.lang.Integer"
+              }
+            }, {
+              "element" : {
+                "name" : "warehouse_profit",
+                "type" : "java.math.BigDecimal"
+              }
+            }, {
+              "element" : {
+                "name" : "warehouse_sales",
+                "type" : "java.math.BigDecimal"
+              }
+            } ],
+            "query" : "select    i2.product_id as product_id,   i2.time_id as time_id,   i2.warehouse_id as warehouse_id,   i2.store_id as store_id,   i2.units_ordered as units_ordered,   i2.units_shipped as units_shipped,   i2.warehouse_sales as warehouse_sales,   i2.warehouse_cost as warehouse_cost,   i2.supply_time as supply_time,   i2.store_invoice as store_invoice,    (i2.warehouse_sales - i2.warehouse_cost) as warehouse_profit  from   inventory_fact_1998 i2"
+          }
+        } ]
+      }
+    }, {
+      "joinGroup" : {
+        "name" : "employee_join",
+        "elements" : [ {
+          "reference" : {
+            "name" : "store4",
+            "referencePath" : "dsFoodMart.public.store4"
+          }
+        }, {
+          "reference" : {
+            "name" : "employee4",
+            "referencePath" : "dsFoodMart.public.employee4"
+          }
+        }, {
+          "reference" : {
+            "name" : "salary4",
+            "referencePath" : "dsFoodMart.public.salary4"
+          }
+        }, {
+          "reference" : {
+            "name" : "position4",
+            "referencePath" : "dsFoodMart.public.position4"
+          }
+        }, {
+          "reference" : {
+            "name" : "region4",
+            "referencePath" : "dsFoodMart.public.region4"
+          }
+        }, {
+          "reference" : {
+            "name" : "department4",
+            "referencePath" : "dsFoodMart.public.department4"
+          }
+        } ],
+        "joinInfo" : {
+          "includeAllDataIslandJoins" : false,
+          "suppressCircularJoins" : false,
+          "joins" : [ {
+            "left" : "store4",
+            "right" : "employee4",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "store4.store_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "employee4.store_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "store4.store_id == employee4.store_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "employee4",
+            "right" : "department4",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "department4.department_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "employee4.department_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "department4.department_id == employee4.department_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "employee4",
+            "right" : "position4",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "position4.position_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "employee4.position_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "position4.position_id == employee4.position_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "employee4",
+            "right" : "salary4",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "salary4.employee_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "employee4.employee_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "salary4.employee_id == employee4.employee_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "store4",
+            "right" : "region4",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "region4.region_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "store4.region_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "region4.region_id == store4.region_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          } ]
+        }
+      }
+    }, {
+      "joinGroup" : {
+        "name" : "sales_join",
+        "elements" : [ {
+          "reference" : {
+            "name" : "time_by_day1",
+            "referencePath" : "dsFoodMart.public.time_by_day1"
+          }
+        }, {
+          "reference" : {
+            "name" : "sales_fact_1998_1",
+            "referencePath" : "dsFoodMart.public.sales_fact_1998_1"
+          }
+        }, {
+          "reference" : {
+            "name" : "region11",
+            "referencePath" : "dsFoodMart.public.region11"
+          }
+        }, {
+          "reference" : {
+            "name" : "store1",
+            "referencePath" : "dsFoodMart.public.store1"
+          }
+        }, {
+          "reference" : {
+            "name" : "product1",
+            "referencePath" : "dsFoodMart.public.product1"
+          }
+        } ],
+        "joinInfo" : {
+          "includeAllDataIslandJoins" : false,
+          "suppressCircularJoins" : false,
+          "joins" : [ {
+            "left" : "store1",
+            "right" : "sales_fact_1998_1",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "store1.store_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "sales_fact_1998_1.store_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "store1.store_id == sales_fact_1998_1.store_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "sales_fact_1998_1",
+            "right" : "product1",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "product1.product_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "sales_fact_1998_1.product_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "product1.product_id == sales_fact_1998_1.product_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "time_by_day1",
+            "right" : "sales_fact_1998_1",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "time_by_day1.time_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "sales_fact_1998_1.time_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "time_by_day1.time_id == sales_fact_1998_1.time_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "region11",
+            "right" : "store1",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "region11.region_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "store1.region_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "region11.region_id == store1.region_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          } ]
+        }
+      }
+    }, {
+      "joinGroup" : {
+        "name" : "exp_join",
+        "elements" : [ {
+          "reference" : {
+            "name" : "account3",
+            "referencePath" : "dsFoodMart.public.account3"
+          }
+        }, {
+          "reference" : {
+            "name" : "expense_fact3",
+            "referencePath" : "dsFoodMart.public.expense_fact3"
+          }
+        }, {
+          "reference" : {
+            "name" : "category3",
+            "referencePath" : "dsFoodMart.public.category3"
+          }
+        }, {
+          "reference" : {
+            "name" : "store3",
+            "referencePath" : "dsFoodMart.public.store3"
+          }
+        }, {
+          "reference" : {
+            "name" : "region3",
+            "referencePath" : "dsFoodMart.public.region3"
+          }
+        } ],
+        "joinInfo" : {
+          "includeAllDataIslandJoins" : false,
+          "suppressCircularJoins" : false,
+          "joins" : [ {
+            "left" : "expense_fact3",
+            "right" : "account3",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "account3.account_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "expense_fact3.account_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "account3.account_id == expense_fact3.account_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "expense_fact3",
+            "right" : "category3",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "category3.category_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "expense_fact3.category_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "category3.category_id == expense_fact3.category_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "expense_fact3",
+            "right" : "store3",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "store3.store_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "expense_fact3.store_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "store3.store_id == expense_fact3.store_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "store3",
+            "right" : "region3",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "region3.region_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "store3.region_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "region3.region_id == store3.region_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          } ]
+        }
+      }
+    }, {
+      "joinGroup" : {
+        "name" : "inv_join",
+        "elements" : [ {
+          "reference" : {
+            "name" : "time_by_day2",
+            "referencePath" : "dsFoodMart.public.time_by_day2"
+          }
+        }, {
+          "reference" : {
+            "name" : "store2",
+            "referencePath" : "dsFoodMart.public.store2"
+          }
+        }, {
+          "reference" : {
+            "name" : "inventory_fact_1998_2",
+            "referencePath" : "dsFoodMart.inventory_fact_1998_2"
+          }
+        }, {
+          "reference" : {
+            "name" : "product2",
+            "referencePath" : "dsFoodMart.public.product2"
+          }
+        }, {
+          "reference" : {
+            "name" : "region2",
+            "referencePath" : "dsFoodMart.public.region2"
+          }
+        } ],
+        "joinInfo" : {
+          "includeAllDataIslandJoins" : false,
+          "suppressCircularJoins" : false,
+          "joins" : [ {
+            "left" : "store2",
+            "right" : "inventory_fact_1998_2",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "store2.store_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "inventory_fact_1998_2.store_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "store2.store_id == inventory_fact_1998_2.store_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "inventory_fact_1998_2",
+            "right" : "product2",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "product2.product_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "inventory_fact_1998_2.product_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "product2.product_id == inventory_fact_1998_2.product_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "time_by_day2",
+            "right" : "inventory_fact_1998_2",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "time_by_day2.time_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "inventory_fact_1998_2.time_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "time_by_day2.time_id == inventory_fact_1998_2.time_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          }, {
+            "left" : "store2",
+            "right" : "region2",
+            "expression" : {
+              "object" : {
+                "equals" : {
+                  "operands" : [ {
+                    "variable" : {
+                      "name" : "region2.region_id"
+                    }
+                  }, {
+                    "variable" : {
+                      "name" : "store2.region_id"
+                    }
+                  } ]
+                }
+              },
+              "string" : "region2.region_id == store2.region_id"
+            },
+            "weight" : 1,
+            "type" : "inner"
+          } ]
+        }
+      }
+    } ],
+    "presentation" : [ {
+      "name" : "exp_join",
+      "elements" : [ {
+        "group" : {
+          "name" : "expense_fact",
+          "label" : "expense_fact",
+          "labelId" : "supermart.expense_fact.label",
+          "descriptionId" : "supermart.expense_fact.description",
+          "elements" : [ {
+            "group" : {
+              "name" : "account",
+              "label" : "account",
+              "labelId" : "supermart.account.label",
+              "descriptionId" : "supermart.account.description",
+              "elements" : [ {
+                "element" : {
+                  "name" : "account__account_description",
+                  "label" : "account__account_description",
+                  "labelId" : "supermart.account.account_description.label",
+                  "descriptionId" : "supermart.account.account_description.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "expense_fact.account.account__account_description",
+                  "resourcePath" : "exp_join.account3.account_description"
+                }
+              }, {
+                "element" : {
+                  "name" : "account__account_type",
+                  "label" : "account__account_type",
+                  "labelId" : "supermart.account.account_type.label",
+                  "descriptionId" : "supermart.account.account_type.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "expense_fact.account.account__account_type",
+                  "resourcePath" : "exp_join.account3.account_type"
+                }
+              } ]
+            }
+          }, {
+            "group" : {
+              "name" : "exp_store",
+              "label" : "exp_store",
+              "labelId" : "supermart.store.label",
+              "descriptionId" : "supermart.store.description",
+              "elements" : [ {
+                "group" : {
+                  "name" : "exp_store__store_contact",
+                  "label" : "exp_store__store_contact",
+                  "labelId" : "supermart.store_contact.label",
+                  "descriptionId" : "supermart.store_contact.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "exp_store__store_contact__store_number",
+                      "label" : "exp_store__store_contact__store_number",
+                      "labelId" : "supermart.store.store_number.description",
+                      "descriptionId" : "supermart.store.store_number.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_contact.exp_store__store_contact__store_number",
+                      "resourcePath" : "exp_join.store3.store_number"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_contact__store_street_address",
+                      "label" : "exp_store__store_contact__store_street_address",
+                      "labelId" : "supermart.store.store_street_address.label",
+                      "descriptionId" : "supermart.store.store_street_address.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_contact.exp_store__store_contact__store_street_address",
+                      "resourcePath" : "exp_join.store3.store_street_address"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_contact__store_city",
+                      "label" : "exp_store__store_contact__store_city",
+                      "labelId" : "supermart.store.store_city.label",
+                      "descriptionId" : "supermart.store.store_city.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_contact.exp_store__store_contact__store_city",
+                      "resourcePath" : "exp_join.store3.store_city"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_contact__store_state",
+                      "label" : "exp_store__store_contact__store_state",
+                      "labelId" : "supermart.store.store_state.label",
+                      "descriptionId" : "supermart.store.store_state.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_contact.exp_store__store_contact__store_state",
+                      "resourcePath" : "exp_join.store3.store_state"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_contact__store_postal_code",
+                      "label" : "exp_store__store_contact__store_postal_code",
+                      "labelId" : "supermart.store.store_postal_code.label",
+                      "descriptionId" : "supermart.store.store_postal_code.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_contact.exp_store__store_contact__store_postal_code",
+                      "resourcePath" : "exp_join.store3.store_postal_code"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_contact__store_country",
+                      "label" : "exp_store__store_contact__store_country",
+                      "labelId" : "supermart.store.store_country.label",
+                      "descriptionId" : "supermart.store.store_country.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_contact.exp_store__store_contact__store_country",
+                      "resourcePath" : "exp_join.store3.store_country"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_contact__store_manager",
+                      "label" : "exp_store__store_contact__store_manager",
+                      "labelId" : "supermart.store.store_manager.label",
+                      "descriptionId" : "supermart.store.store_manager.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_contact.exp_store__store_contact__store_manager",
+                      "resourcePath" : "exp_join.store3.store_manager"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_contact__store_phone",
+                      "label" : "exp_store__store_contact__store_phone",
+                      "labelId" : "supermart.store.store_phone.label",
+                      "descriptionId" : "supermart.store.store_phone.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_contact.exp_store__store_contact__store_phone",
+                      "resourcePath" : "exp_join.store3.store_phone"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_contact__store_fax",
+                      "label" : "exp_store__store_contact__store_fax",
+                      "labelId" : "supermart.store.store_fax.label",
+                      "descriptionId" : "supermart.store.store_fax.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_contact.exp_store__store_contact__store_fax",
+                      "resourcePath" : "exp_join.store3.store_fax"
+                    }
+                  } ]
+                }
+              }, {
+                "group" : {
+                  "name" : "exp_store__region",
+                  "label" : "exp_store__region",
+                  "labelId" : "supermart.region.label",
+                  "descriptionId" : "supermart.region.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "exp_store__region__sales_city",
+                      "label" : "exp_store__region__sales_city",
+                      "labelId" : "supermart.region.sales_city.label",
+                      "descriptionId" : "supermart.region.sales_city.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__region.exp_store__region__sales_city",
+                      "resourcePath" : "exp_join.region3.sales_city"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__region__sales_state_province",
+                      "label" : "exp_store__region__sales_state_province",
+                      "labelId" : "supermart.region.sales_state_province.label",
+                      "descriptionId" : "supermart.region.sales_state_province.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__region.exp_store__region__sales_state_province",
+                      "resourcePath" : "exp_join.region3.sales_state_province"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__region__sales_district",
+                      "label" : "exp_store__region__sales_district",
+                      "labelId" : "supermart.region.sales_district.label",
+                      "descriptionId" : "supermart.region.sales_district.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__region.exp_store__region__sales_district",
+                      "resourcePath" : "exp_join.region3.sales_district"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__region__sales_region",
+                      "label" : "exp_store__region__sales_region",
+                      "labelId" : "supermart.region.sales_region.label",
+                      "descriptionId" : "supermart.region.sales_region.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__region.exp_store__region__sales_region",
+                      "resourcePath" : "exp_join.region3.sales_region"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__region__sales_country",
+                      "label" : "exp_store__region__sales_country",
+                      "labelId" : "supermart.region.sales_country.label",
+                      "descriptionId" : "supermart.region.sales_country.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__region.exp_store__region__sales_country",
+                      "resourcePath" : "exp_join.region3.sales_country"
+                    }
+                  } ]
+                }
+              }, {
+                "group" : {
+                  "name" : "exp_store__store_features",
+                  "label" : "exp_store__store_features",
+                  "labelId" : "supermart.store_features.label",
+                  "descriptionId" : "supermart.store_features.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "exp_store__store_features__first_opened_date",
+                      "label" : "exp_store__store_features__first_opened_date",
+                      "labelId" : "supermart.store.first_opened_date.label",
+                      "descriptionId" : "supermart.store.first_opened_date.description",
+                      "type" : "java.sql.Timestamp",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__first_opened_date",
+                      "resourcePath" : "exp_join.store3.first_opened_date"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_features__last_remodel_date",
+                      "label" : "exp_store__store_features__last_remodel_date",
+                      "labelId" : "supermart.store.last_remodel_date.label",
+                      "descriptionId" : "supermart.store.last_remodel_date.description",
+                      "type" : "java.sql.Timestamp",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__last_remodel_date",
+                      "resourcePath" : "exp_join.store3.last_remodel_date"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_features__store_sqft",
+                      "label" : "exp_store__store_features__store_sqft",
+                      "labelId" : "supermart.store.store_sqft.label",
+                      "descriptionId" : "supermart.store.store_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__store_sqft",
+                      "resourcePath" : "exp_join.store3.store_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_features__grocery_sqft",
+                      "label" : "exp_store__store_features__grocery_sqft",
+                      "labelId" : "supermart.store.grocery_sqft.label",
+                      "descriptionId" : "supermart.store.grocery_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__grocery_sqft",
+                      "resourcePath" : "exp_join.store3.grocery_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_features__frozen_sqft",
+                      "label" : "exp_store__store_features__frozen_sqft",
+                      "labelId" : "supermart.store.frozen_sqft.label",
+                      "descriptionId" : "supermart.store.frozen_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__frozen_sqft",
+                      "resourcePath" : "exp_join.store3.frozen_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_features__meat_sqft",
+                      "label" : "exp_store__store_features__meat_sqft",
+                      "labelId" : "supermart.store.meat_sqft.label",
+                      "descriptionId" : "supermart.store.meat_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__meat_sqft",
+                      "resourcePath" : "exp_join.store3.meat_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_features__coffee_bar",
+                      "label" : "exp_store__store_features__coffee_bar",
+                      "labelId" : "supermart.store.coffee_bar.label",
+                      "descriptionId" : "supermart.store.coffee_bar.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__coffee_bar",
+                      "resourcePath" : "exp_join.store3.coffee_bar"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_features__video_store",
+                      "label" : "exp_store__store_features__video_store",
+                      "labelId" : "supermart.store.video_store.label",
+                      "descriptionId" : "supermart.store.video_store.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__video_store",
+                      "resourcePath" : "exp_join.store3.video_store"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_features__salad_bar",
+                      "label" : "exp_store__store_features__salad_bar",
+                      "labelId" : "supermart.store.salad_bar.label",
+                      "descriptionId" : "supermart.store.salad_bar.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__salad_bar",
+                      "resourcePath" : "exp_join.store3.salad_bar"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_features__prepared_food",
+                      "label" : "exp_store__store_features__prepared_food",
+                      "labelId" : "supermart.store.prepared_food.label",
+                      "descriptionId" : "supermart.store.prepared_food.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__prepared_food",
+                      "resourcePath" : "exp_join.store3.prepared_food"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "exp_store__store_features__florist",
+                      "label" : "exp_store__store_features__florist",
+                      "labelId" : "supermart.store.florist.label",
+                      "descriptionId" : "supermart.store.florist.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "expense_fact.exp_store.exp_store__store_features.exp_store__store_features__florist",
+                      "resourcePath" : "exp_join.store3.florist"
+                    }
+                  } ]
+                }
+              }, {
+                "element" : {
+                  "name" : "exp_store__store_type",
+                  "label" : "exp_store__store_type",
+                  "labelId" : "supermart.store.store_type.label",
+                  "descriptionId" : "supermart.store.store_type.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "expense_fact.exp_store.exp_store__store_type",
+                  "resourcePath" : "exp_join.store3.store_type"
+                }
+              }, {
+                "element" : {
+                  "name" : "exp_store__store_name",
+                  "label" : "exp_store__store_name",
+                  "labelId" : "supermart.store.store_name.label",
+                  "descriptionId" : "supermart.store.store_name.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "expense_fact.exp_store.exp_store__store_name",
+                  "resourcePath" : "exp_join.store3.store_name"
+                }
+              } ]
+            }
+          }, {
+            "element" : {
+              "name" : "expense_fact__exp_date",
+              "label" : "expense_fact__exp_date",
+              "labelId" : "supermart.expense_fact.exp_date.label",
+              "descriptionId" : "supermart.expense_fact.exp_date.description",
+              "type" : "java.sql.Timestamp",
+              "hierarchicalName" : "expense_fact.expense_fact__exp_date",
+              "resourcePath" : "exp_join.expense_fact3.exp_date"
+            }
+          }, {
+            "element" : {
+              "name" : "expense_fact__amount",
+              "label" : "expense_fact__amount",
+              "labelId" : "supermart.expense_fact.amount.label",
+              "descriptionId" : "supermart.expense_fact.amount.description",
+              "type" : "java.math.BigDecimal",
+              "hierarchicalName" : "expense_fact.expense_fact__amount",
+              "resourcePath" : "exp_join.expense_fact3.amount"
+            }
+          } ]
+        }
+      } ]
+    }, {
+      "name" : "sales_join",
+      "elements" : [ {
+        "group" : {
+          "name" : "sales_fact_ALL",
+          "label" : "sales_fact_ALL",
+          "labelId" : "supermart.sales_fact_ALL.label",
+          "descriptionId" : "supermart.sales_fact_ALL.description",
+          "elements" : [ {
+            "group" : {
+              "name" : "sales__product",
+              "label" : "sales__product",
+              "labelId" : "supermart.product.label",
+              "descriptionId" : "supermart.product.description",
+              "elements" : [ {
+                "element" : {
+                  "name" : "sales__product__brand_name",
+                  "label" : "sales__product__brand_name",
+                  "labelId" : "supermart.product.brand_name.label",
+                  "descriptionId" : "supermart.product.brand_name.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__brand_name",
+                  "resourcePath" : "sales_join.product1.brand_name"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__product_name",
+                  "label" : "sales__product__product_name",
+                  "labelId" : "supermart.product.product_name.label",
+                  "descriptionId" : "supermart.product.product_name.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__product_name",
+                  "resourcePath" : "sales_join.product1.product_name"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__SKU",
+                  "label" : "sales__product__SKU",
+                  "labelId" : "supermart.product.SKU.label",
+                  "descriptionId" : "supermart.product.SKU.description",
+                  "type" : "java.lang.Long",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__SKU",
+                  "resourcePath" : "sales_join.product1.sku"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__SRP",
+                  "label" : "sales__product__SRP",
+                  "labelId" : "supermart.product.SRP.label",
+                  "descriptionId" : "supermart.product.SRP.description",
+                  "type" : "java.math.BigDecimal",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__SRP",
+                  "resourcePath" : "sales_join.product1.srp"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__gross_weight",
+                  "label" : "sales__product__gross_weight",
+                  "labelId" : "supermart.product.gross_weight.label",
+                  "descriptionId" : "supermart.product.gross_weight.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__gross_weight",
+                  "resourcePath" : "sales_join.product1.gross_weight"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__net_weight",
+                  "label" : "sales__product__net_weight",
+                  "labelId" : "supermart.product.net_weight.label",
+                  "descriptionId" : "supermart.product.net_weight.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__net_weight",
+                  "resourcePath" : "sales_join.product1.net_weight"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__recyclable_package",
+                  "label" : "sales__product__recyclable_package",
+                  "labelId" : "supermart.product.recyclable_package.label",
+                  "descriptionId" : "supermart.product.recyclable_package.description",
+                  "type" : "java.lang.Boolean",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__recyclable_package",
+                  "resourcePath" : "sales_join.product1.recyclable_package"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__low_fat",
+                  "label" : "sales__product__low_fat",
+                  "labelId" : "supermart.product.low_fat.label",
+                  "descriptionId" : "supermart.product.low_fat.description",
+                  "type" : "java.lang.Boolean",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__low_fat",
+                  "resourcePath" : "sales_join.product1.low_fat"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__units_per_case",
+                  "label" : "sales__product__units_per_case",
+                  "labelId" : "supermart.product.units_per_case.label",
+                  "descriptionId" : "supermart.product.units_per_case.description",
+                  "type" : "java.lang.Short",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__units_per_case",
+                  "resourcePath" : "sales_join.product1.units_per_case"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__cases_per_pallet",
+                  "label" : "sales__product__cases_per_pallet",
+                  "labelId" : "supermart.product.cases_per_pallet.label",
+                  "descriptionId" : "supermart.product.cases_per_pallet.description",
+                  "type" : "java.lang.Short",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__cases_per_pallet",
+                  "resourcePath" : "sales_join.product1.cases_per_pallet"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__shelf_width",
+                  "label" : "sales__product__shelf_width",
+                  "labelId" : "supermart.product.shelf_width.label",
+                  "descriptionId" : "supermart.product.shelf_width.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__shelf_width",
+                  "resourcePath" : "sales_join.product1.shelf_width"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__shelf_height",
+                  "label" : "sales__product__shelf_height",
+                  "labelId" : "supermart.product.shelf_height.label",
+                  "descriptionId" : "supermart.product.shelf_height.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__shelf_height",
+                  "resourcePath" : "sales_join.product1.shelf_height"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__product__shelf_depth",
+                  "label" : "sales__product__shelf_depth",
+                  "labelId" : "supermart.product.shelf_depth.label",
+                  "descriptionId" : "supermart.product.shelf_depth.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "sales_fact_ALL.sales__product.sales__product__shelf_depth",
+                  "resourcePath" : "sales_join.product1.shelf_depth"
+                }
+              } ]
+            }
+          }, {
+            "group" : {
+              "name" : "sales__store",
+              "label" : "sales__store",
+              "labelId" : "supermart.store.label",
+              "descriptionId" : "supermart.store.description",
+              "elements" : [ {
+                "group" : {
+                  "name" : "sales__store__store_contact",
+                  "label" : "sales__store__store_contact",
+                  "labelId" : "supermart.store_contact.label",
+                  "descriptionId" : "supermart.store_contact.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "sales__store__store_contact__store_number",
+                      "label" : "sales__store__store_contact__store_number",
+                      "labelId" : "supermart.store.store_number.description",
+                      "descriptionId" : "supermart.store.store_number.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_contact.sales__store__store_contact__store_number",
+                      "resourcePath" : "sales_join.store1.store_number"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_contact__store_street_address",
+                      "label" : "sales__store__store_contact__store_street_address",
+                      "labelId" : "supermart.store.store_street_address.label",
+                      "descriptionId" : "supermart.store.store_street_address.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_contact.sales__store__store_contact__store_street_address",
+                      "resourcePath" : "sales_join.store1.store_street_address"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_contact__store_city",
+                      "label" : "sales__store__store_contact__store_city",
+                      "labelId" : "supermart.store.store_city.label",
+                      "descriptionId" : "supermart.store.store_city.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_contact.sales__store__store_contact__store_city",
+                      "resourcePath" : "sales_join.store1.store_city"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_contact__store_state",
+                      "label" : "sales__store__store_contact__store_state",
+                      "labelId" : "supermart.store.store_state.label",
+                      "descriptionId" : "supermart.store.store_state.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_contact.sales__store__store_contact__store_state",
+                      "resourcePath" : "sales_join.store1.store_state"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_contact__store_postal_code",
+                      "label" : "sales__store__store_contact__store_postal_code",
+                      "labelId" : "supermart.store.store_postal_code.label",
+                      "descriptionId" : "supermart.store.store_postal_code.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_contact.sales__store__store_contact__store_postal_code",
+                      "resourcePath" : "sales_join.store1.store_postal_code"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_contact__store_country",
+                      "label" : "sales__store__store_contact__store_country",
+                      "labelId" : "supermart.store.store_country.label",
+                      "descriptionId" : "supermart.store.store_country.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_contact.sales__store__store_contact__store_country",
+                      "resourcePath" : "sales_join.store1.store_country"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_contact__store_manager",
+                      "label" : "sales__store__store_contact__store_manager",
+                      "labelId" : "supermart.store.store_manager.label",
+                      "descriptionId" : "supermart.store.store_manager.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_contact.sales__store__store_contact__store_manager",
+                      "resourcePath" : "sales_join.store1.store_manager"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_contact__store_phone",
+                      "label" : "sales__store__store_contact__store_phone",
+                      "labelId" : "supermart.store.store_phone.label",
+                      "descriptionId" : "supermart.store.store_phone.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_contact.sales__store__store_contact__store_phone",
+                      "resourcePath" : "sales_join.store1.store_phone"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_contact__store_fax",
+                      "label" : "sales__store__store_contact__store_fax",
+                      "labelId" : "supermart.store.store_fax.label",
+                      "descriptionId" : "supermart.store.store_fax.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_contact.sales__store__store_contact__store_fax",
+                      "resourcePath" : "sales_join.store1.store_fax"
+                    }
+                  } ]
+                }
+              }, {
+                "group" : {
+                  "name" : "sales__store__region",
+                  "label" : "sales__store__region",
+                  "labelId" : "supermart.region.label",
+                  "descriptionId" : "supermart.region.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "sales__store__region__sales_city",
+                      "label" : "sales__store__region__sales_city",
+                      "labelId" : "supermart.region.sales_city.label",
+                      "descriptionId" : "supermart.region.sales_city.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__region.sales__store__region__sales_city",
+                      "resourcePath" : "sales_join.region11.sales_city"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__region__sales_state_province",
+                      "label" : "sales__store__region__sales_state_province",
+                      "labelId" : "supermart.region.sales_state_province.label",
+                      "descriptionId" : "supermart.region.sales_state_province.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__region.sales__store__region__sales_state_province",
+                      "resourcePath" : "sales_join.region11.sales_state_province"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__region__sales_district",
+                      "label" : "sales__store__region__sales_district",
+                      "labelId" : "supermart.region.sales_district.label",
+                      "descriptionId" : "supermart.region.sales_district.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__region.sales__store__region__sales_district",
+                      "resourcePath" : "sales_join.region11.sales_district"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__region__sales_region",
+                      "label" : "sales__store__region__sales_region",
+                      "labelId" : "supermart.region.sales_region.label",
+                      "descriptionId" : "supermart.region.sales_region.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__region.sales__store__region__sales_region",
+                      "resourcePath" : "sales_join.region11.sales_region"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__region__sales_country",
+                      "label" : "sales__store__region__sales_country",
+                      "labelId" : "supermart.region.sales_country.label",
+                      "descriptionId" : "supermart.region.sales_country.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__region.sales__store__region__sales_country",
+                      "resourcePath" : "sales_join.region11.sales_country"
+                    }
+                  } ]
+                }
+              }, {
+                "group" : {
+                  "name" : "sales__store__store_features",
+                  "label" : "sales__store__store_features",
+                  "labelId" : "supermart.store_features.label",
+                  "descriptionId" : "supermart.store_features.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "sales__store__store_features__first_opened_date",
+                      "label" : "sales__store__store_features__first_opened_date",
+                      "labelId" : "supermart.store.first_opened_date.label",
+                      "descriptionId" : "supermart.store.first_opened_date.description",
+                      "type" : "java.sql.Timestamp",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__first_opened_date",
+                      "resourcePath" : "sales_join.store1.first_opened_date"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_features__last_remodel_date",
+                      "label" : "sales__store__store_features__last_remodel_date",
+                      "labelId" : "supermart.store.last_remodel_date.label",
+                      "descriptionId" : "supermart.store.last_remodel_date.description",
+                      "type" : "java.sql.Timestamp",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__last_remodel_date",
+                      "resourcePath" : "sales_join.store1.last_remodel_date"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_features__store_sqft",
+                      "label" : "sales__store__store_features__store_sqft",
+                      "labelId" : "supermart.store.store_sqft.label",
+                      "descriptionId" : "supermart.store.store_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__store_sqft",
+                      "resourcePath" : "sales_join.store1.store_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_features__grocery_sqft",
+                      "label" : "sales__store__store_features__grocery_sqft",
+                      "labelId" : "supermart.store.grocery_sqft.label",
+                      "descriptionId" : "supermart.store.grocery_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__grocery_sqft",
+                      "resourcePath" : "sales_join.store1.grocery_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_features__frozen_sqft",
+                      "label" : "sales__store__store_features__frozen_sqft",
+                      "labelId" : "supermart.store.frozen_sqft.label",
+                      "descriptionId" : "supermart.store.frozen_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__frozen_sqft",
+                      "resourcePath" : "sales_join.store1.frozen_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_features__meat_sqft",
+                      "label" : "sales__store__store_features__meat_sqft",
+                      "labelId" : "supermart.store.meat_sqft.label",
+                      "descriptionId" : "supermart.store.meat_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__meat_sqft",
+                      "resourcePath" : "sales_join.store1.meat_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_features__coffee_bar",
+                      "label" : "sales__store__store_features__coffee_bar",
+                      "labelId" : "supermart.store.coffee_bar.label",
+                      "descriptionId" : "supermart.store.coffee_bar.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__coffee_bar",
+                      "resourcePath" : "sales_join.store1.coffee_bar"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_features__video_store",
+                      "label" : "sales__store__store_features__video_store",
+                      "labelId" : "supermart.store.video_store.label",
+                      "descriptionId" : "supermart.store.video_store.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__video_store",
+                      "resourcePath" : "sales_join.store1.video_store"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_features__salad_bar",
+                      "label" : "sales__store__store_features__salad_bar",
+                      "labelId" : "supermart.store.salad_bar.label",
+                      "descriptionId" : "supermart.store.salad_bar.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__salad_bar",
+                      "resourcePath" : "sales_join.store1.salad_bar"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_features__prepared_food",
+                      "label" : "sales__store__store_features__prepared_food",
+                      "labelId" : "supermart.store.prepared_food.label",
+                      "descriptionId" : "supermart.store.prepared_food.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__prepared_food",
+                      "resourcePath" : "sales_join.store1.prepared_food"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "sales__store__store_features__florist",
+                      "label" : "sales__store__store_features__florist",
+                      "labelId" : "supermart.store.florist.label",
+                      "descriptionId" : "supermart.store.florist.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_features.sales__store__store_features__florist",
+                      "resourcePath" : "sales_join.store1.florist"
+                    }
+                  } ]
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__store__store_type",
+                  "label" : "sales__store__store_type",
+                  "labelId" : "supermart.store.store_type.label",
+                  "descriptionId" : "supermart.store.store_type.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_type",
+                  "resourcePath" : "sales_join.store1.store_type"
+                }
+              }, {
+                "element" : {
+                  "name" : "sales__store__store_name",
+                  "label" : "sales__store__store_name",
+                  "labelId" : "supermart.store.store_name.label",
+                  "descriptionId" : "supermart.store.store_name.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "sales_fact_ALL.sales__store.sales__store__store_name",
+                  "resourcePath" : "sales_join.store1.store_name"
+                }
+              } ]
+            }
+          }, {
+            "element" : {
+              "name" : "sales_fact_ALL__store_sales_2013",
+              "label" : "sales_fact_ALL__store_sales_2013",
+              "labelId" : "supermart.sales_fact_2013.store_sales.label",
+              "descriptionId" : "supermart.sales_fact_2013.store_sales.description",
+              "kind" : "measure",
+              "type" : "java.math.BigDecimal",
+              "hierarchicalName" : "sales_fact_ALL.sales_fact_ALL__store_sales_2013",
+              "resourcePath" : "sales_join.sales_fact_1998_1.store_sales"
+            }
+          }, {
+            "element" : {
+              "name" : "sales_fact_ALL__store_cost_2013",
+              "label" : "sales_fact_ALL__store_cost_2013",
+              "labelId" : "supermart.sales_fact_2013.store_cost.label",
+              "descriptionId" : "supermart.sales_fact_2013.store_cost.description",
+              "kind" : "measure",
+              "type" : "java.math.BigDecimal",
+              "hierarchicalName" : "sales_fact_ALL.sales_fact_ALL__store_cost_2013",
+              "resourcePath" : "sales_join.sales_fact_1998_1.store_cost"
+            }
+          }, {
+            "element" : {
+              "name" : "sales_fact_ALL__unit_sales_2013",
+              "label" : "sales_fact_ALL__unit_sales_2013",
+              "labelId" : "supermart.sales_fact_2013.unit_sales.label",
+              "descriptionId" : "supermart.sales_fact_2013.unit_sales.description",
+              "kind" : "measure",
+              "type" : "java.math.BigDecimal",
+              "hierarchicalName" : "sales_fact_ALL.sales_fact_ALL__unit_sales_2013",
+              "resourcePath" : "sales_join.sales_fact_1998_1.unit_sales"
+            }
+          } ]
+        }
+      } ]
+    }, {
+      "name" : "employee_join",
+      "elements" : [ {
+        "group" : {
+          "name" : "employee",
+          "label" : "employee",
+          "labelId" : "supermart.employee.label",
+          "descriptionId" : "supermart.employee.description",
+          "elements" : [ {
+            "group" : {
+              "name" : "employee__employee_private",
+              "label" : "employee__employee_private",
+              "labelId" : "supermart.employee_private.label",
+              "descriptionId" : "supermart.employee_private.label",
+              "elements" : [ {
+                "element" : {
+                  "name" : "employee__employee_private__birth_date",
+                  "label" : "employee__employee_private__birth_date",
+                  "labelId" : "supermart.employee.birth_date.label",
+                  "descriptionId" : "supermart.employee.birth_date.description",
+                  "type" : "java.util.Date",
+                  "hierarchicalName" : "employee.employee__employee_private.employee__employee_private__birth_date",
+                  "resourcePath" : "employee_join.employee4.birth_date"
+                }
+              }, {
+                "element" : {
+                  "name" : "employee__employee_private__salary",
+                  "label" : "employee__employee_private__salary",
+                  "labelId" : "supermart.employee.salary.label",
+                  "descriptionId" : "supermart.employee.salary.description",
+                  "type" : "java.math.BigDecimal",
+                  "hierarchicalName" : "employee.employee__employee_private.employee__employee_private__salary",
+                  "resourcePath" : "employee_join.employee4.salary"
+                }
+              }, {
+                "element" : {
+                  "name" : "employee__employee_private__education_level",
+                  "label" : "employee__employee_private__education_level",
+                  "labelId" : "supermart.employee.education_level.label",
+                  "descriptionId" : "supermart.employee.education_level.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "employee.employee__employee_private.employee__employee_private__education_level",
+                  "resourcePath" : "employee_join.employee4.education_level"
+                }
+              }, {
+                "element" : {
+                  "name" : "employee__employee_private__marital_status",
+                  "label" : "employee__employee_private__marital_status",
+                  "labelId" : "supermart.employee.marital_status.label",
+                  "descriptionId" : "supermart.employee.marital_status.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "employee.employee__employee_private.employee__employee_private__marital_status",
+                  "resourcePath" : "employee_join.employee4.marital_status"
+                }
+              }, {
+                "element" : {
+                  "name" : "employee__employee_private__gender",
+                  "label" : "employee__employee_private__gender",
+                  "labelId" : "supermart.employee.gender.label",
+                  "descriptionId" : "supermart.employee.gender.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "employee.employee__employee_private.employee__employee_private__gender",
+                  "resourcePath" : "employee_join.employee4.gender"
+                }
+              }, {
+                "element" : {
+                  "name" : "employee__employee_private__pay_type",
+                  "label" : "employee__employee_private__pay_type",
+                  "labelId" : "supermart.position.pay_type.label",
+                  "descriptionId" : "supermart.position.pay_type.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "employee.employee__employee_private.employee__employee_private__pay_type",
+                  "resourcePath" : "employee_join.position4.pay_type"
+                }
+              }, {
+                "element" : {
+                  "name" : "employee__employee_private__min_scale",
+                  "label" : "employee__employee_private__min_scale",
+                  "labelId" : "supermart.position.min_scale.label",
+                  "descriptionId" : "supermart.position.min_scale.description",
+                  "type" : "java.math.BigDecimal",
+                  "hierarchicalName" : "employee.employee__employee_private.employee__employee_private__min_scale",
+                  "resourcePath" : "employee_join.position4.min_scale"
+                }
+              }, {
+                "element" : {
+                  "name" : "employee__employee_private__max_scale",
+                  "label" : "employee__employee_private__max_scale",
+                  "labelId" : "supermart.position.max_scale.label",
+                  "descriptionId" : "supermart.position.max_scale.description",
+                  "type" : "java.math.BigDecimal",
+                  "hierarchicalName" : "employee.employee__employee_private.employee__employee_private__max_scale",
+                  "resourcePath" : "employee_join.position4.max_scale"
+                }
+              } ]
+            }
+          }, {
+            "group" : {
+              "name" : "salary",
+              "label" : "salary",
+              "labelId" : "supermart.salary.label",
+              "descriptionId" : "supermart.salary.description",
+              "elements" : [ {
+                "element" : {
+                  "name" : "salary__pay_date",
+                  "label" : "salary__pay_date",
+                  "labelId" : "supermart.salary.pay_date.label",
+                  "descriptionId" : "supermart.salary.pay_date.description",
+                  "type" : "java.sql.Timestamp",
+                  "hierarchicalName" : "employee.salary.salary__pay_date",
+                  "resourcePath" : "employee_join.salary4.pay_date"
+                }
+              }, {
+                "element" : {
+                  "name" : "salary__salary_paid",
+                  "label" : "salary__salary_paid",
+                  "labelId" : "supermart.salary.salary_paid.label",
+                  "descriptionId" : "supermart.salary.salary_paid.description",
+                  "type" : "java.math.BigDecimal",
+                  "hierarchicalName" : "employee.salary.salary__salary_paid",
+                  "resourcePath" : "employee_join.salary4.salary_paid"
+                }
+              }, {
+                "element" : {
+                  "name" : "salary__overtime_paid",
+                  "label" : "salary__overtime_paid",
+                  "labelId" : "supermart.salary.overtime_paid.label",
+                  "descriptionId" : "supermart.salary.overtime_paid.description",
+                  "type" : "java.math.BigDecimal",
+                  "hierarchicalName" : "employee.salary.salary__overtime_paid",
+                  "resourcePath" : "employee_join.salary4.overtime_paid"
+                }
+              }, {
+                "element" : {
+                  "name" : "salary__vacation_accrued",
+                  "label" : "salary__vacation_accrued",
+                  "labelId" : "supermart.salary.vacation_accrued.label",
+                  "descriptionId" : "supermart.salary.vacation_accrued.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "employee.salary.salary__vacation_accrued",
+                  "resourcePath" : "employee_join.salary4.vacation_accrued"
+                }
+              }, {
+                "element" : {
+                  "name" : "salary__vacation_used",
+                  "label" : "salary__vacation_used",
+                  "labelId" : "supermart.salary.vacation_used.label",
+                  "descriptionId" : "supermart.salary.vacation_used.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "employee.salary.salary__vacation_used",
+                  "resourcePath" : "employee_join.salary4.vacation_used"
+                }
+              } ]
+            }
+          }, {
+            "group" : {
+              "name" : "emp_store",
+              "label" : "emp_store",
+              "labelId" : "supermart.store.label",
+              "descriptionId" : "supermart.store.description",
+              "elements" : [ {
+                "group" : {
+                  "name" : "emp_store__store_contact",
+                  "label" : "emp_store__store_contact",
+                  "labelId" : "supermart.store_contact.label",
+                  "descriptionId" : "supermart.store_contact.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "emp_store__store_contact__store_number",
+                      "label" : "emp_store__store_contact__store_number",
+                      "labelId" : "supermart.store.store_number.description",
+                      "descriptionId" : "supermart.store.store_number.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_contact.emp_store__store_contact__store_number",
+                      "resourcePath" : "employee_join.store4.store_number"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_contact__store_street_address",
+                      "label" : "emp_store__store_contact__store_street_address",
+                      "labelId" : "supermart.store.store_street_address.label",
+                      "descriptionId" : "supermart.store.store_street_address.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_contact.emp_store__store_contact__store_street_address",
+                      "resourcePath" : "employee_join.store4.store_street_address"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_contact__store_city",
+                      "label" : "emp_store__store_contact__store_city",
+                      "labelId" : "supermart.store.store_city.label",
+                      "descriptionId" : "supermart.store.store_city.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_contact.emp_store__store_contact__store_city",
+                      "resourcePath" : "employee_join.store4.store_city"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_contact__store_state",
+                      "label" : "emp_store__store_contact__store_state",
+                      "labelId" : "supermart.store.store_state.label",
+                      "descriptionId" : "supermart.store.store_state.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_contact.emp_store__store_contact__store_state",
+                      "resourcePath" : "employee_join.store4.store_state"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_contact__store_postal_code",
+                      "label" : "emp_store__store_contact__store_postal_code",
+                      "labelId" : "supermart.store.store_postal_code.label",
+                      "descriptionId" : "supermart.store.store_postal_code.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_contact.emp_store__store_contact__store_postal_code",
+                      "resourcePath" : "employee_join.store4.store_postal_code"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_contact__store_country",
+                      "label" : "emp_store__store_contact__store_country",
+                      "labelId" : "supermart.store.store_country.label",
+                      "descriptionId" : "supermart.store.store_country.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_contact.emp_store__store_contact__store_country",
+                      "resourcePath" : "employee_join.store4.store_country"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_contact__store_manager",
+                      "label" : "emp_store__store_contact__store_manager",
+                      "labelId" : "supermart.store.store_manager.label",
+                      "descriptionId" : "supermart.store.store_manager.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_contact.emp_store__store_contact__store_manager",
+                      "resourcePath" : "employee_join.store4.store_manager"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_contact__store_phone",
+                      "label" : "emp_store__store_contact__store_phone",
+                      "labelId" : "supermart.store.store_phone.label",
+                      "descriptionId" : "supermart.store.store_phone.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_contact.emp_store__store_contact__store_phone",
+                      "resourcePath" : "employee_join.store4.store_phone"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_contact__store_fax",
+                      "label" : "emp_store__store_contact__store_fax",
+                      "labelId" : "supermart.store.store_fax.label",
+                      "descriptionId" : "supermart.store.store_fax.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_contact.emp_store__store_contact__store_fax",
+                      "resourcePath" : "employee_join.store4.store_fax"
+                    }
+                  } ]
+                }
+              }, {
+                "group" : {
+                  "name" : "emp_store__region",
+                  "label" : "emp_store__region",
+                  "labelId" : "supermart.region.label",
+                  "descriptionId" : "supermart.region.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "emp_store__region__sales_city",
+                      "label" : "emp_store__region__sales_city",
+                      "labelId" : "supermart.region.sales_city.label",
+                      "descriptionId" : "supermart.region.sales_city.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__region.emp_store__region__sales_city",
+                      "resourcePath" : "employee_join.region4.sales_city"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__region__sales_state_province",
+                      "label" : "emp_store__region__sales_state_province",
+                      "labelId" : "supermart.region.sales_state_province.label",
+                      "descriptionId" : "supermart.region.sales_state_province.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__region.emp_store__region__sales_state_province",
+                      "resourcePath" : "employee_join.region4.sales_state_province"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__region__sales_district",
+                      "label" : "emp_store__region__sales_district",
+                      "labelId" : "supermart.region.sales_district.label",
+                      "descriptionId" : "supermart.region.sales_district.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__region.emp_store__region__sales_district",
+                      "resourcePath" : "employee_join.region4.sales_district"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__region__sales_region",
+                      "label" : "emp_store__region__sales_region",
+                      "labelId" : "supermart.region.sales_region.label",
+                      "descriptionId" : "supermart.region.sales_region.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__region.emp_store__region__sales_region",
+                      "resourcePath" : "employee_join.region4.sales_region"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__region__sales_country",
+                      "label" : "emp_store__region__sales_country",
+                      "labelId" : "supermart.region.sales_country.label",
+                      "descriptionId" : "supermart.region.sales_country.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "employee.emp_store.emp_store__region.emp_store__region__sales_country",
+                      "resourcePath" : "employee_join.region4.sales_country"
+                    }
+                  } ]
+                }
+              }, {
+                "group" : {
+                  "name" : "emp_store__store_features",
+                  "label" : "emp_store__store_features",
+                  "labelId" : "supermart.store_features.label",
+                  "descriptionId" : "supermart.store_features.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "emp_store__store_features__first_opened_date",
+                      "label" : "emp_store__store_features__first_opened_date",
+                      "labelId" : "supermart.store.first_opened_date.label",
+                      "descriptionId" : "supermart.store.first_opened_date.description",
+                      "type" : "java.sql.Timestamp",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__first_opened_date",
+                      "resourcePath" : "employee_join.store4.first_opened_date"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_features__last_remodel_date",
+                      "label" : "emp_store__store_features__last_remodel_date",
+                      "labelId" : "supermart.store.last_remodel_date.label",
+                      "descriptionId" : "supermart.store.last_remodel_date.description",
+                      "type" : "java.sql.Timestamp",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__last_remodel_date",
+                      "resourcePath" : "employee_join.store4.last_remodel_date"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_features__store_sqft",
+                      "label" : "emp_store__store_features__store_sqft",
+                      "labelId" : "supermart.store.store_sqft.label",
+                      "descriptionId" : "supermart.store.store_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__store_sqft",
+                      "resourcePath" : "employee_join.store4.store_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_features__grocery_sqft",
+                      "label" : "emp_store__store_features__grocery_sqft",
+                      "labelId" : "supermart.store.grocery_sqft.label",
+                      "descriptionId" : "supermart.store.grocery_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__grocery_sqft",
+                      "resourcePath" : "employee_join.store4.grocery_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_features__frozen_sqft",
+                      "label" : "emp_store__store_features__frozen_sqft",
+                      "labelId" : "supermart.store.frozen_sqft.label",
+                      "descriptionId" : "supermart.store.frozen_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__frozen_sqft",
+                      "resourcePath" : "employee_join.store4.frozen_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_features__meat_sqft",
+                      "label" : "emp_store__store_features__meat_sqft",
+                      "labelId" : "supermart.store.meat_sqft.label",
+                      "descriptionId" : "supermart.store.meat_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__meat_sqft",
+                      "resourcePath" : "employee_join.store4.meat_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_features__coffee_bar",
+                      "label" : "emp_store__store_features__coffee_bar",
+                      "labelId" : "supermart.store.coffee_bar.label",
+                      "descriptionId" : "supermart.store.coffee_bar.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__coffee_bar",
+                      "resourcePath" : "employee_join.store4.coffee_bar"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_features__video_store",
+                      "label" : "emp_store__store_features__video_store",
+                      "labelId" : "supermart.store.video_store.label",
+                      "descriptionId" : "supermart.store.video_store.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__video_store",
+                      "resourcePath" : "employee_join.store4.video_store"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_features__salad_bar",
+                      "label" : "emp_store__store_features__salad_bar",
+                      "labelId" : "supermart.store.salad_bar.label",
+                      "descriptionId" : "supermart.store.salad_bar.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__salad_bar",
+                      "resourcePath" : "employee_join.store4.salad_bar"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_features__prepared_food",
+                      "label" : "emp_store__store_features__prepared_food",
+                      "labelId" : "supermart.store.prepared_food.label",
+                      "descriptionId" : "supermart.store.prepared_food.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__prepared_food",
+                      "resourcePath" : "employee_join.store4.prepared_food"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "emp_store__store_features__florist",
+                      "label" : "emp_store__store_features__florist",
+                      "labelId" : "supermart.store.florist.label",
+                      "descriptionId" : "supermart.store.florist.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "employee.emp_store.emp_store__store_features.emp_store__store_features__florist",
+                      "resourcePath" : "employee_join.store4.florist"
+                    }
+                  } ]
+                }
+              }, {
+                "element" : {
+                  "name" : "emp_store__store_type",
+                  "label" : "emp_store__store_type",
+                  "labelId" : "supermart.store.store_type.label",
+                  "descriptionId" : "supermart.store.store_type.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "employee.emp_store.emp_store__store_type",
+                  "resourcePath" : "employee_join.store4.store_type"
+                }
+              }, {
+                "element" : {
+                  "name" : "emp_store__store_name",
+                  "label" : "emp_store__store_name",
+                  "labelId" : "supermart.store.store_name.label",
+                  "descriptionId" : "supermart.store.store_name.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "employee.emp_store.emp_store__store_name",
+                  "resourcePath" : "employee_join.store4.store_name"
+                }
+              } ]
+            }
+          }, {
+            "element" : {
+              "name" : "employee__employee_id",
+              "label" : "employee__employee_id",
+              "labelId" : "supermart.employee.employee_id.label",
+              "descriptionId" : "supermart.employee.employee_id.description",
+              "type" : "java.lang.Integer",
+              "hierarchicalName" : "employee.employee__employee_id",
+              "resourcePath" : "employee_join.employee4.employee_id"
+            }
+          }, {
+            "element" : {
+              "name" : "employee__full_name",
+              "label" : "employee__full_name",
+              "labelId" : "supermart.employee.full_name.label",
+              "descriptionId" : "supermart.employee.full_name.description",
+              "type" : "java.lang.String",
+              "hierarchicalName" : "employee.employee__full_name",
+              "resourcePath" : "employee_join.employee4.full_name"
+            }
+          }, {
+            "element" : {
+              "name" : "employee__first_name",
+              "label" : "employee__first_name",
+              "labelId" : "supermart.employee.first_name.label",
+              "descriptionId" : "supermart.employee.first_name.description",
+              "type" : "java.lang.String",
+              "hierarchicalName" : "employee.employee__first_name",
+              "resourcePath" : "employee_join.employee4.first_name"
+            }
+          }, {
+            "element" : {
+              "name" : "employee__last_name",
+              "label" : "employee__last_name",
+              "labelId" : "supermart.employee.last_name.label",
+              "descriptionId" : "supermart.employee.last_name.description",
+              "type" : "java.lang.String",
+              "hierarchicalName" : "employee.employee__last_name",
+              "resourcePath" : "employee_join.employee4.last_name"
+            }
+          }, {
+            "element" : {
+              "name" : "employee__department_description",
+              "label" : "employee__department_description",
+              "labelId" : "supermart.department.department_description.label",
+              "descriptionId" : "supermart.department.department_description.description",
+              "type" : "java.lang.String",
+              "hierarchicalName" : "employee.employee__department_description",
+              "resourcePath" : "employee_join.department4.department_description"
+            }
+          }, {
+            "element" : {
+              "name" : "employee__position_title",
+              "label" : "employee__position_title",
+              "labelId" : "supermart.employee.position_title.label",
+              "descriptionId" : "supermart.employee.position_title.description",
+              "type" : "java.lang.String",
+              "hierarchicalName" : "employee.employee__position_title",
+              "resourcePath" : "employee_join.employee4.position_title"
+            }
+          }, {
+            "element" : {
+              "name" : "employee__management_role",
+              "label" : "employee__management_role",
+              "labelId" : "supermart.employee.management_role.label",
+              "descriptionId" : "supermart.employee.management_role.description",
+              "type" : "java.lang.String",
+              "hierarchicalName" : "employee.employee__management_role",
+              "resourcePath" : "employee_join.employee4.management_role"
+            }
+          }, {
+            "element" : {
+              "name" : "employee__hire_date",
+              "label" : "employee__hire_date",
+              "labelId" : "supermart.employee.hire_date.label",
+              "descriptionId" : "supermart.employee.hire_date.description",
+              "type" : "java.sql.Timestamp",
+              "hierarchicalName" : "employee.employee__hire_date",
+              "resourcePath" : "employee_join.employee4.hire_date"
+            }
+          }, {
+            "element" : {
+              "name" : "employee__end_date",
+              "label" : "employee__end_date",
+              "labelId" : "supermart.employee.end_date.label",
+              "descriptionId" : "supermart.employee.end_date.description",
+              "type" : "java.sql.Timestamp",
+              "hierarchicalName" : "employee.employee__end_date",
+              "resourcePath" : "employee_join.employee4.end_date"
+            }
+          } ]
+        }
+      } ]
+    }, {
+      "name" : "inv_join",
+      "elements" : [ {
+        "group" : {
+          "name" : "inventory_fact_ALL",
+          "label" : "inventory_fact_ALL",
+          "labelId" : "supermart.inventory_fact_ALL.label",
+          "descriptionId" : "supermart.inventory_fact_ALL.description",
+          "elements" : [ {
+            "group" : {
+              "name" : "inv_store",
+              "label" : "inv_store",
+              "labelId" : "supermart.store.label",
+              "descriptionId" : "supermart.store.description",
+              "elements" : [ {
+                "group" : {
+                  "name" : "inv_store__store_contact",
+                  "label" : "inv_store__store_contact",
+                  "labelId" : "supermart.store_contact.label",
+                  "descriptionId" : "supermart.store_contact.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "inv_store__store_contact__store_number",
+                      "label" : "inv_store__store_contact__store_number",
+                      "labelId" : "supermart.store.store_number.description",
+                      "descriptionId" : "supermart.store.store_number.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_contact.inv_store__store_contact__store_number",
+                      "resourcePath" : "inv_join.store2.store_number"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_contact__store_street_address",
+                      "label" : "inv_store__store_contact__store_street_address",
+                      "labelId" : "supermart.store.store_street_address.label",
+                      "descriptionId" : "supermart.store.store_street_address.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_contact.inv_store__store_contact__store_street_address",
+                      "resourcePath" : "inv_join.store2.store_street_address"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_contact__store_city",
+                      "label" : "inv_store__store_contact__store_city",
+                      "labelId" : "supermart.store.store_city.label",
+                      "descriptionId" : "supermart.store.store_city.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_contact.inv_store__store_contact__store_city",
+                      "resourcePath" : "inv_join.store2.store_city"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_contact__store_state",
+                      "label" : "inv_store__store_contact__store_state",
+                      "labelId" : "supermart.store.store_state.label",
+                      "descriptionId" : "supermart.store.store_state.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_contact.inv_store__store_contact__store_state",
+                      "resourcePath" : "inv_join.store2.store_state"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_contact__store_postal_code",
+                      "label" : "inv_store__store_contact__store_postal_code",
+                      "labelId" : "supermart.store.store_postal_code.label",
+                      "descriptionId" : "supermart.store.store_postal_code.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_contact.inv_store__store_contact__store_postal_code",
+                      "resourcePath" : "inv_join.store2.store_postal_code"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_contact__store_country",
+                      "label" : "inv_store__store_contact__store_country",
+                      "labelId" : "supermart.store.store_country.label",
+                      "descriptionId" : "supermart.store.store_country.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_contact.inv_store__store_contact__store_country",
+                      "resourcePath" : "inv_join.store2.store_country"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_contact__store_manager",
+                      "label" : "inv_store__store_contact__store_manager",
+                      "labelId" : "supermart.store.store_manager.label",
+                      "descriptionId" : "supermart.store.store_manager.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_contact.inv_store__store_contact__store_manager",
+                      "resourcePath" : "inv_join.store2.store_manager"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_contact__store_phone",
+                      "label" : "inv_store__store_contact__store_phone",
+                      "labelId" : "supermart.store.store_phone.label",
+                      "descriptionId" : "supermart.store.store_phone.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_contact.inv_store__store_contact__store_phone",
+                      "resourcePath" : "inv_join.store2.store_phone"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_contact__store_fax",
+                      "label" : "inv_store__store_contact__store_fax",
+                      "labelId" : "supermart.store.store_fax.label",
+                      "descriptionId" : "supermart.store.store_fax.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_contact.inv_store__store_contact__store_fax",
+                      "resourcePath" : "inv_join.store2.store_fax"
+                    }
+                  } ]
+                }
+              }, {
+                "group" : {
+                  "name" : "inv_store__region",
+                  "label" : "inv_store__region",
+                  "labelId" : "supermart.region.label",
+                  "descriptionId" : "supermart.region.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "inv_store__region__sales_city",
+                      "label" : "inv_store__region__sales_city",
+                      "labelId" : "supermart.region.sales_city.label",
+                      "descriptionId" : "supermart.region.sales_city.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__region.inv_store__region__sales_city",
+                      "resourcePath" : "inv_join.region2.sales_city"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__region__sales_state_province",
+                      "label" : "inv_store__region__sales_state_province",
+                      "labelId" : "supermart.region.sales_state_province.label",
+                      "descriptionId" : "supermart.region.sales_state_province.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__region.inv_store__region__sales_state_province",
+                      "resourcePath" : "inv_join.region2.sales_state_province"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__region__sales_district",
+                      "label" : "inv_store__region__sales_district",
+                      "labelId" : "supermart.region.sales_district.label",
+                      "descriptionId" : "supermart.region.sales_district.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__region.inv_store__region__sales_district",
+                      "resourcePath" : "inv_join.region2.sales_district"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__region__sales_region",
+                      "label" : "inv_store__region__sales_region",
+                      "labelId" : "supermart.region.sales_region.label",
+                      "descriptionId" : "supermart.region.sales_region.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__region.inv_store__region__sales_region",
+                      "resourcePath" : "inv_join.region2.sales_region"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__region__sales_country",
+                      "label" : "inv_store__region__sales_country",
+                      "labelId" : "supermart.region.sales_country.label",
+                      "descriptionId" : "supermart.region.sales_country.description",
+                      "type" : "java.lang.String",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__region.inv_store__region__sales_country",
+                      "resourcePath" : "inv_join.region2.sales_country"
+                    }
+                  } ]
+                }
+              }, {
+                "group" : {
+                  "name" : "inv_store__store_features",
+                  "label" : "inv_store__store_features",
+                  "labelId" : "supermart.store_features.label",
+                  "descriptionId" : "supermart.store_features.description",
+                  "elements" : [ {
+                    "element" : {
+                      "name" : "inv_store__store_features__first_opened_date",
+                      "label" : "inv_store__store_features__first_opened_date",
+                      "labelId" : "supermart.store.first_opened_date.label",
+                      "descriptionId" : "supermart.store.first_opened_date.description",
+                      "type" : "java.sql.Timestamp",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__first_opened_date",
+                      "resourcePath" : "inv_join.store2.first_opened_date"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_features__last_remodel_date",
+                      "label" : "inv_store__store_features__last_remodel_date",
+                      "labelId" : "supermart.store.last_remodel_date.label",
+                      "descriptionId" : "supermart.store.last_remodel_date.description",
+                      "type" : "java.sql.Timestamp",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__last_remodel_date",
+                      "resourcePath" : "inv_join.store2.last_remodel_date"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_features__store_sqft",
+                      "label" : "inv_store__store_features__store_sqft",
+                      "labelId" : "supermart.store.store_sqft.label",
+                      "descriptionId" : "supermart.store.store_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__store_sqft",
+                      "resourcePath" : "inv_join.store2.store_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_features__grocery_sqft",
+                      "label" : "inv_store__store_features__grocery_sqft",
+                      "labelId" : "supermart.store.grocery_sqft.label",
+                      "descriptionId" : "supermart.store.grocery_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__grocery_sqft",
+                      "resourcePath" : "inv_join.store2.grocery_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_features__frozen_sqft",
+                      "label" : "inv_store__store_features__frozen_sqft",
+                      "labelId" : "supermart.store.frozen_sqft.label",
+                      "descriptionId" : "supermart.store.frozen_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__frozen_sqft",
+                      "resourcePath" : "inv_join.store2.frozen_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_features__meat_sqft",
+                      "label" : "inv_store__store_features__meat_sqft",
+                      "labelId" : "supermart.store.meat_sqft.label",
+                      "descriptionId" : "supermart.store.meat_sqft.description",
+                      "type" : "java.lang.Integer",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__meat_sqft",
+                      "resourcePath" : "inv_join.store2.meat_sqft"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_features__coffee_bar",
+                      "label" : "inv_store__store_features__coffee_bar",
+                      "labelId" : "supermart.store.coffee_bar.label",
+                      "descriptionId" : "supermart.store.coffee_bar.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__coffee_bar",
+                      "resourcePath" : "inv_join.store2.coffee_bar"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_features__video_store",
+                      "label" : "inv_store__store_features__video_store",
+                      "labelId" : "supermart.store.video_store.label",
+                      "descriptionId" : "supermart.store.video_store.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__video_store",
+                      "resourcePath" : "inv_join.store2.video_store"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_features__salad_bar",
+                      "label" : "inv_store__store_features__salad_bar",
+                      "labelId" : "supermart.store.salad_bar.label",
+                      "descriptionId" : "supermart.store.salad_bar.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__salad_bar",
+                      "resourcePath" : "inv_join.store2.salad_bar"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_features__prepared_food",
+                      "label" : "inv_store__store_features__prepared_food",
+                      "labelId" : "supermart.store.prepared_food.label",
+                      "descriptionId" : "supermart.store.prepared_food.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__prepared_food",
+                      "resourcePath" : "inv_join.store2.prepared_food"
+                    }
+                  }, {
+                    "element" : {
+                      "name" : "inv_store__store_features__florist",
+                      "label" : "inv_store__store_features__florist",
+                      "labelId" : "supermart.store.florist.label",
+                      "descriptionId" : "supermart.store.florist.description",
+                      "type" : "java.lang.Boolean",
+                      "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_features.inv_store__store_features__florist",
+                      "resourcePath" : "inv_join.store2.florist"
+                    }
+                  } ]
+                }
+              }, {
+                "element" : {
+                  "name" : "inv_store__store_type",
+                  "label" : "inv_store__store_type",
+                  "labelId" : "supermart.store.store_type.label",
+                  "descriptionId" : "supermart.store.store_type.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_type",
+                  "resourcePath" : "inv_join.store2.store_type"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv_store__store_name",
+                  "label" : "inv_store__store_name",
+                  "labelId" : "supermart.store.store_name.label",
+                  "descriptionId" : "supermart.store.store_name.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "inventory_fact_ALL.inv_store.inv_store__store_name",
+                  "resourcePath" : "inv_join.store2.store_name"
+                }
+              } ]
+            }
+          }, {
+            "group" : {
+              "name" : "inv__product",
+              "label" : "inv__product",
+              "labelId" : "supermart.product.label",
+              "descriptionId" : "supermart.product.description",
+              "elements" : [ {
+                "element" : {
+                  "name" : "inv__product__brand_name",
+                  "label" : "inv__product__brand_name",
+                  "labelId" : "supermart.product.brand_name.label",
+                  "descriptionId" : "supermart.product.brand_name.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__brand_name",
+                  "resourcePath" : "inv_join.product2.brand_name"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__product_name",
+                  "label" : "inv__product__product_name",
+                  "labelId" : "supermart.product.product_name.label",
+                  "descriptionId" : "supermart.product.product_name.description",
+                  "type" : "java.lang.String",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__product_name",
+                  "resourcePath" : "inv_join.product2.product_name"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__SKU",
+                  "label" : "inv__product__SKU",
+                  "labelId" : "supermart.product.SKU.label",
+                  "descriptionId" : "supermart.product.SKU.description",
+                  "type" : "java.lang.Long",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__SKU",
+                  "resourcePath" : "inv_join.product2.sku"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__SRP",
+                  "label" : "inv__product__SRP",
+                  "labelId" : "supermart.product.SRP.label",
+                  "descriptionId" : "supermart.product.SRP.description",
+                  "type" : "java.math.BigDecimal",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__SRP",
+                  "resourcePath" : "inv_join.product2.srp"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__gross_weight",
+                  "label" : "inv__product__gross_weight",
+                  "labelId" : "supermart.product.gross_weight.label",
+                  "descriptionId" : "supermart.product.gross_weight.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__gross_weight",
+                  "resourcePath" : "inv_join.product2.gross_weight"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__net_weight",
+                  "label" : "inv__product__net_weight",
+                  "labelId" : "supermart.product.net_weight.label",
+                  "descriptionId" : "supermart.product.net_weight.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__net_weight",
+                  "resourcePath" : "inv_join.product2.net_weight"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__recyclable_package",
+                  "label" : "inv__product__recyclable_package",
+                  "labelId" : "supermart.product.recyclable_package.label",
+                  "descriptionId" : "supermart.product.recyclable_package.description",
+                  "type" : "java.lang.Boolean",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__recyclable_package",
+                  "resourcePath" : "inv_join.product2.recyclable_package"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__low_fat",
+                  "label" : "inv__product__low_fat",
+                  "labelId" : "supermart.product.low_fat.label",
+                  "descriptionId" : "supermart.product.low_fat.description",
+                  "type" : "java.lang.Boolean",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__low_fat",
+                  "resourcePath" : "inv_join.product2.low_fat"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__units_per_case",
+                  "label" : "inv__product__units_per_case",
+                  "labelId" : "supermart.product.units_per_case.label",
+                  "descriptionId" : "supermart.product.units_per_case.description",
+                  "type" : "java.lang.Short",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__units_per_case",
+                  "resourcePath" : "inv_join.product2.units_per_case"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__cases_per_pallet",
+                  "label" : "inv__product__cases_per_pallet",
+                  "labelId" : "supermart.product.cases_per_pallet.label",
+                  "descriptionId" : "supermart.product.cases_per_pallet.description",
+                  "type" : "java.lang.Short",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__cases_per_pallet",
+                  "resourcePath" : "inv_join.product2.cases_per_pallet"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__shelf_width",
+                  "label" : "inv__product__shelf_width",
+                  "labelId" : "supermart.product.shelf_width.label",
+                  "descriptionId" : "supermart.product.shelf_width.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__shelf_width",
+                  "resourcePath" : "inv_join.product2.shelf_width"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__shelf_height",
+                  "label" : "inv__product__shelf_height",
+                  "labelId" : "supermart.product.shelf_height.label",
+                  "descriptionId" : "supermart.product.shelf_height.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__shelf_height",
+                  "resourcePath" : "inv_join.product2.shelf_height"
+                }
+              }, {
+                "element" : {
+                  "name" : "inv__product__shelf_depth",
+                  "label" : "inv__product__shelf_depth",
+                  "labelId" : "supermart.product.shelf_depth.label",
+                  "descriptionId" : "supermart.product.shelf_depth.description",
+                  "type" : "java.lang.Double",
+                  "hierarchicalName" : "inventory_fact_ALL.inv__product.inv__product__shelf_depth",
+                  "resourcePath" : "inv_join.product2.shelf_depth"
+                }
+              } ]
+            }
+          }, {
+            "element" : {
+              "name" : "inventory_fact_ALL__units_ordered_2013",
+              "label" : "inventory_fact_ALL__units_ordered_2013",
+              "labelId" : "supermart.inventory_fact_2013.units_ordered.label",
+              "descriptionId" : "supermart.inventory_fact_2013.units_ordered.description",
+              "kind" : "measure",
+              "type" : "java.lang.Integer",
+              "hierarchicalName" : "inventory_fact_ALL.inventory_fact_ALL__units_ordered_2013",
+              "resourcePath" : "inv_join.inventory_fact_1998_2.units_ordered"
+            }
+          }, {
+            "element" : {
+              "name" : "inventory_fact_ALL__units_shipped_2013",
+              "label" : "inventory_fact_ALL__units_shipped_2013",
+              "labelId" : "supermart.inventory_fact_2013.units_shipped.label",
+              "descriptionId" : "supermart.inventory_fact_2013.units_shipped.description",
+              "kind" : "measure",
+              "type" : "java.lang.Integer",
+              "hierarchicalName" : "inventory_fact_ALL.inventory_fact_ALL__units_shipped_2013",
+              "resourcePath" : "inv_join.inventory_fact_1998_2.units_shipped"
+            }
+          }, {
+            "element" : {
+              "name" : "inventory_fact_ALL__warehouse_sales_2013",
+              "label" : "inventory_fact_ALL__warehouse_sales_2013",
+              "labelId" : "supermart.inventory_fact_2013.warehouse_sales.label",
+              "descriptionId" : "supermart.inventory_fact_2013.warehouse_sales.description",
+              "kind" : "measure",
+              "type" : "java.math.BigDecimal",
+              "hierarchicalName" : "inventory_fact_ALL.inventory_fact_ALL__warehouse_sales_2013",
+              "resourcePath" : "inv_join.inventory_fact_1998_2.warehouse_sales"
+            }
+          }, {
+            "element" : {
+              "name" : "inventory_fact_ALL__warehouse_cost_2013",
+              "label" : "inventory_fact_ALL__warehouse_cost_2013",
+              "labelId" : "supermart.inventory_fact_2013.warehouse_cost.label",
+              "descriptionId" : "supermart.inventory_fact_2013.warehouse_cost.description",
+              "kind" : "measure",
+              "type" : "java.math.BigDecimal",
+              "hierarchicalName" : "inventory_fact_ALL.inventory_fact_ALL__warehouse_cost_2013",
+              "resourcePath" : "inv_join.inventory_fact_1998_2.warehouse_cost"
+            }
+          }, {
+            "element" : {
+              "name" : "inventory_fact_ALL__supply_time_2013",
+              "label" : "inventory_fact_ALL__supply_time_2013",
+              "labelId" : "supermart.inventory_fact_2013.supply_time.label",
+              "descriptionId" : "supermart.inventory_fact_2013.supply_time.description",
+              "kind" : "measure",
+              "type" : "java.lang.Short",
+              "hierarchicalName" : "inventory_fact_ALL.inventory_fact_ALL__supply_time_2013",
+              "resourcePath" : "inv_join.inventory_fact_1998_2.supply_time"
+            }
+          }, {
+            "element" : {
+              "name" : "inventory_fact_ALL__store_invoice_2013",
+              "label" : "inventory_fact_ALL__store_invoice_2013",
+              "labelId" : "supermart.inventory_fact_2013.store_invoice.label",
+              "descriptionId" : "supermart.inventory_fact_2013.store_invoice.description",
+              "kind" : "measure",
+              "type" : "java.math.BigDecimal",
+              "hierarchicalName" : "inventory_fact_ALL.inventory_fact_ALL__store_invoice_2013",
+              "resourcePath" : "inv_join.inventory_fact_1998_2.store_invoice"
+            }
+          }, {
+            "element" : {
+              "name" : "inventory_fact_ALL__warehouse_profit_2013",
+              "label" : "inventory_fact_ALL__warehouse_profit_2013",
+              "labelId" : "supermart.inventory_fact_2013.warehouse_profit.label",
+              "descriptionId" : "supermart.inventory_fact_2013.warehouse_profit.description",
+              "kind" : "measure",
+              "type" : "java.math.BigDecimal",
+              "hierarchicalName" : "inventory_fact_ALL.inventory_fact_ALL__warehouse_profit_2013",
+              "resourcePath" : "inv_join.inventory_fact_1998_2.warehouse_profit"
+            }
+          } ]
+        }
+      } ]
+    } ]
+  },
+  "bundles" : [ {
+    "locale" : "",
+    "file" : {
+      "file" : {
+        "label" : "supermart_domain.properties",
+        "description" : "bundle",
+        "type" : "prop"
+      }
+    }
+  }, {
+    "locale" : "es",
+    "file" : {
+      "file" : {
+        "label" : "supermart_domain_es.properties",
+        "description" : "bundle",
+        "type" : "prop"
+      }
+    }
+  } ]
+}
